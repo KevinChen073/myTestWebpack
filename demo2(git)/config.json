@@ -1,0 +1,11 @@
+{
+    "repositories": [{
+            "delivery": "https://github.com/smks/nobot-repo-1",
+            "baseBranch": "master"
+        },
+        {
+            "delivery": "https://github.com/smks/nobot-repo-2",
+            "baseBranch": "master"
+        }
+    ]
+}

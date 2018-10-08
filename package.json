@@ -1,0 +1,26 @@
+{
+  "name": "testautomatic",
+  "version": "1.0.0",
+  "description": "用于尝试webpack相关",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinChen073/myTestWebpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinChen073/myTestWebpack/issues"
+  },
+  "homepage": "https://github.com/KevinChen073/myTestWebpack#readme",
+  "devDependencies": {
+    "archiver": "^3.0.0",
+    "colors": "^1.3.2",
+    "csv-parse": "^3.1.3",
+    "readline-sync": "^1.4.9",
+    "shelljs": "^0.8.2"
+  }
+}

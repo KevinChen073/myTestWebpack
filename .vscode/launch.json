@@ -1,0 +1,51 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "测试process",
+            "program": "${workspaceFolder}/demo1(base)/demoProcess.js",
+            "args": [
+                "name"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "测试os",
+            "program": "${workspaceFolder}/demo1(base)/demoOS.js",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "文件IO",
+            "program": "${workspaceFolder}/demo1(base)/demoReadFile.js",
+        },        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "文件流写入",
+            "program": "${workspaceFolder}/demo1(base)/demoZip.js",
+        },                
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "文件写入",
+            "program": "${workspaceFolder}/demo1(base)/demoWriteFile.js",
+        },                
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "测试子进程",
+            "program": "${workspaceFolder}/demo1(base)/demoChildProcess.js",
+            "args": [
+                "https://www.taobao.com"
+            ]
+        }
+    ]
+}
