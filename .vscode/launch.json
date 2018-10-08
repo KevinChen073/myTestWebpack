@@ -31,7 +31,19 @@
             "request": "launch",
             "name": "文件流写入",
             "program": "${workspaceFolder}/demo1(base)/demoZip.js",
-        },                
+        },  
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "读取参数",
+            "program": "${workspaceFolder}/demo5/minimist.js",
+            "args": [
+                "apple bananas cherries",
+                "--name='My Game'",
+                "--ticket='My Ticket'",
+                "--template='My Template'"
+            ]
+        },                         
         {
             "type": "node",
             "request": "launch",
