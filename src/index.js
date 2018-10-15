@@ -4,6 +4,7 @@ const { version } = require('../package');
 const work = require('./commands/work');
 const ownWork = require('./commands/ownWork');
 const check = require('./commands/check');
+const config = require('./commands/config');
 
 nobot
  .version(version);
@@ -18,6 +19,11 @@ nobot
 //  .option('-g, --game [gameName]', 'select a game')
  .description('打开个人生活相关')
  .action(ownWork);
+
+nobot
+ .command('config')
+ .description('配置')
+ .action(config);
 
  nobot
  .command('check')
