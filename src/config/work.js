@@ -1,24 +1,32 @@
+let debugAndroid  = require('./../task/debugAndroid');
+let justFlow  = require('./../task/justFlow');
+let debugMinisite  = require('./../task/debugMinisite');
+let data  = require('./../task/data');
 module.exports = {
     dataSource: [
         {
-            alias: 'minisite',
-            desc: '进入旺铺开发'
-        },
-        {
             alias: 'debug-minisite',
-            desc: '调试旺铺'
+            desc: '旺铺',
+            task: debugMinisite
         },        
         {
             alias: 'just-flow',
-            desc: '进入Just-flow无线开发'
+            desc: 'Just-flow',
+            task: justFlow
+        },
+        {
+            alias: 'debug-android',
+            desc: 'Android调试',
+            task: debugAndroid
+        },
+        {
+            alias: 'data',
+            desc: '数据查看',
+            task: data
         },
         {
             alias: 'just-cmd',
             desc: '进入just-命令行开发'
-        },
-        {
-            alias: 'data',
-            desc: '数据查看'
         },
         {
             alias: 'daily',

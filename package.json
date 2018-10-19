@@ -27,5 +27,8 @@
     "readline-sync": "^1.4.9",
     "shelljs": "^0.8.2",
     "stream-transform": "^1.0.7"
+  },
+  "dependencies": {
+    "inquirer": "^6.2.0"
   }
 }
