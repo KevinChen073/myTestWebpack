@@ -2,7 +2,8 @@ var inquirer = require('inquirer');
 const {cd, exec} = require('shelljs');
 // const { exec } = require('child_process');
 const opn = require('opn');
-let {charlesApp} = require('../config/appPath');
+let {charlesApp, vsApp} = require('../config/appPath');
+let {minisitePath} = require('../config/filePath');
 /**
  * 调试旺铺相关 - 打开testminisite网页，打开旺铺支持，打开旺铺的blade，打开vs打开旺铺目录，打开charles查看
  * @function debugMinisite
@@ -36,10 +37,10 @@ module.exports = function debugMinisite() {
                     case 'minsiteSupport':
                         opn('https://yuque.antfin-inc.com/yuanhong.cyh/ywxv2y')
                     break;
-                    case 'blade':
-                        opn('https://yuque.antfin-inc.com/yuanhong.cyh/ywxv2y')
-                    break;
                     case 'vsMinisite':
+                        exec(`open -a ${vsApp} ${minisitePath}`)
+                    break;
+                    case 'blade':
                         exec('cd /ali-work/rax/icbushop/ff/blade;ff dev;')
                     break;
                     case 'charles':

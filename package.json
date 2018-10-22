@@ -29,6 +29,7 @@
     "stream-transform": "^1.0.7"
   },
   "dependencies": {
-    "inquirer": "^6.2.0"
+    "inquirer": "^6.2.0",
+    "parse-git-config": "^2.0.3"
   }
 }

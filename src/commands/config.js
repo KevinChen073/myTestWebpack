@@ -9,7 +9,7 @@ let {subl, vsApp} = require('./../config/appPath');
  * 去到webpack的工作目录
  * @example shell
  * myWork config
- * 
+ * @todo 即将删除，由developoWOrkLife代替
  */
 module.exports = ()=>{
     let index = readLineSync.keyInSelect(['打开todoList','打开程序编写目录','cd 到目录'], '选择需要的工作');
