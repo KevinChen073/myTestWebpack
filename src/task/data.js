@@ -66,7 +66,7 @@ module.exports = function debugMinisite() {
                         opn('http://aplus.alibaba-inc.com/aplusplus/index.htm')
                     break;
                     case 'xflush':
-                        // opn('https://datastudio.dw.alibaba-inc.com/')
+                        opn('http://xflush.alibaba-inc.com/custom/6/product/preview/multiMinute/2963')
                     break;                    
                 }
             });

@@ -1,8 +1,10 @@
+let recordGitBook  = require('./../task/recordGitBook');
 module.exports = {
     dataSource: [
         {
             alias: 'record-gitbook',
-            desc: '记录gitbook'
+            desc: '记录gitbook',
+            task: recordGitBook
         },
         {
             alias: 'greatwall',

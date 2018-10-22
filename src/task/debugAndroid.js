@@ -2,7 +2,7 @@
 const {cd, exec} = require('shelljs');
 // const { exec } = require('child_process');
 const opn = require('opn');
-let {androidStudio, androidStudioApp} = require('./../config/appPath');
+let {androidStudioApp} = require('./../config/appPath');
 /**
  * 打开Android调试能力 - Android studio，Android 工程，打开我的网页支持
  * @function debugAndroid

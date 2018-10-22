@@ -16,13 +16,15 @@ module.exports = ()=>{
     if (index !== -1) {
         switch(index) {
             case 0:
+                console.log(`${subl} /myOwnFile/myTestWebpack/src/todo/index.md`.cyan);
                 exec(`${subl} /myOwnFile/myTestWebpack/src/todo/index.md`);
             break;
             case 1:
+                console.log(`open -a ${vsApp} /myOwnFile/myTestWebpack`.cyan);
                 exec(`open -a ${vsApp} /myOwnFile/myTestWebpack`);
             break;
             case 2:
-                exec(`cd /myOwnFile/myTestWebpack`);
+                console.log(`cd /myOwnFile/myTestWebpack`.cyan);
             break;
             default:
                 console.log(`放弃选择`.cyan);

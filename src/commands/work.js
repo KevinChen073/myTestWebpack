@@ -1,18 +1,37 @@
-require('colors');
-const readLineSync = require('readline-sync');
-let workConfig  = require('./../config/work');
+require('colors')
+let baseWork = require('./baseWork');
+let dataSource = require('./../config/work');
+let dataSourceOwn = require('./../config/ownWork');
 
+// https://github.com/SBoudrias/Inquirer.js/
+var inquirer = require('inquirer');
+
+
+const mapping = {
+    work: {
+        label: '工作项'.cyan,
+        data: dataSource
+    },
+    ownWork: {
+        label: '日常'.cyan,
+        data: dataSourceOwn
+    },
+}
 module.exports = ()=>{
-    let index = readLineSync.keyInSelect(workConfig.dataSource.map((v)=>{
-        return v.desc;
-    }), '选择需要的工作');
-    if (index !== -1) {
-        let work = workConfig.dataSource[index];
-        console.log(`选择了：${work.desc} : ${work.alias}`.green);
-        if (work.task && typeof work.task === 'function') {
-            work.task();
-        }
-    } else {
-        console.log(`放弃选择`.cyan);
-    }
+    inquirer
+        .prompt([{
+            type: 'list',
+            message: '选择需要的行为',
+            name: 'toppings',
+            choices: [
+                {name: '工作', value: 'work'},
+                {name: '个人工作', value: 'ownWork'},
+            ]
+        }])
+        .then(answer => {
+            let choice = answer.toppings;
+
+            let {label, data} = mapping[choice]
+            baseWork(label, data);
+        });
 }
